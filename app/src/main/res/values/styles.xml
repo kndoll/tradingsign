@@ -22,21 +22,11 @@
     </style>
 
     <!-- street shop theme -->
-    <style name="SSTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="TSTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
-        <item name="android:textColorPrimary">@color/primary_text</item>
         <item name="colorAccent">@color/accent</item>
-    </style>
-
-    <style name="RatingBar" parent="Theme.AppCompat">
-        <item name="colorControlNormal">@color/indicator_bg</item>
-        <item name="colorControlActivated">@color/indicator</item>
-    </style>
-
-    <style name="SSTheme.ActionBar" parent="SSTheme">
-        <item name="android:textColorPrimary">@color/icons</item>
-        <item name="android:textColorSecondary">@color/icons</item>
-        <item name="android:textColorHint">@color/primary_light</item>
+        <item name="android:colorBackground">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

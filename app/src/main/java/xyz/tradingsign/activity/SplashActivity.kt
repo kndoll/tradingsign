@@ -1,6 +1,9 @@
 package xyz.tradingsign.activity
 
 import android.content.Context
+import android.content.Intent
+import android.database.Cursor
+import android.database.sqlite.SQLiteDatabase
 import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
@@ -10,6 +13,7 @@ import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.TedPermission
 import com.truefriend.corelib.commexpert.intrf.IExpertInitListener
 import com.truefriend.corelib.commexpert.intrf.IExpertLoginListener
+import xyz.tradingsign.utils.DBHelper
 
 class SplashActivity : AppCompatActivity(), IExpertInitListener, IExpertLoginListener {
     var context: Context? = null
@@ -22,6 +26,9 @@ class SplashActivity : AppCompatActivity(), IExpertInitListener, IExpertLoginLis
         override fun onPermissionDenied(deniedPermissions: MutableList<String>?) {
         }
     }
+
+    lateinit var dbHelper: DBHelper
+    lateinit var database: SQLiteDatabase
 
     private fun checkPermission() {
         if (Build.VERSION.SDK_INT >= 23) {
@@ -46,6 +53,17 @@ class SplashActivity : AppCompatActivity(), IExpertInitListener, IExpertLoginLis
         context = this@SplashActivity
         CommExpertMng.InitActivity(this@SplashActivity)
         checkPermission()
+
+        dbHelper = DBHelper(this@SplashActivity, "tradingSign.db", null, 1)
+        database = dbHelper.writableDatabase
+
+//        var query = "INSERT INTO mytable('txt') values('kndoll')"
+//        database.execSQL(query)
+//
+//        var c: Cursor = database.query("mytable", null, null, null, null, null, null)
+//        while (c.moveToNext()) {
+//            println("txt : " + c.getString(c.getColumnIndex("txt")))
+//        }
     }
 
     private fun initCommExpert() {
@@ -95,6 +113,7 @@ class SplashActivity : AppCompatActivity(), IExpertInitListener, IExpertLoginLis
     }
 
     override fun onLoginFinished() {
-        Toast.makeText(baseContext, "계좌리스트 조회 TR 성공 => " + CommExpertMng.getInstance().GetAccountNo(0), Toast.LENGTH_SHORT).show()
+//        Toast.makeText(baseContext, "계좌리스트 조회 TR 성공 => " + CommExpertMng.getInstance().GetAccountNo(0), Toast.LENGTH_SHORT).show()
+        startActivity(Intent(this@SplashActivity, StockListActivity::class.java))
     }
 }

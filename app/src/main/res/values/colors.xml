@@ -7,36 +7,39 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#809C9595</color>
 
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBg">#519839</color>
-    <color name="splashBg">#673AB7</color>
     <color name="deepSkyBlue">#30c8fe</color>
     <color name="chocolate">#d06001</color>
+    <color name="splashBg">#004D40</color>
 
-    <!-- ss color -->
-    <color name="primary">#673AB7</color>
-    <color name="primary_dark">#512DA8</color>
-    <color name="primary_light">#D1C4E9</color>
-    <color name="accent">#7C4DFF</color>
-    <color name="primary_text">#212121</color>
-    <color name="secondary_text">#757575</color>
-    <color name="icons">#FFFFFF</color>
-    <color name="divider">#BDBDBD</color>
-    <color name="indicator">#FF4081</color>
-    <color name="indicator_bg">#989292</color>
-    <color name="badge_bg">#B3FF4081</color>
-    <color name="primary_marker">#536dfe</color>
-    <color name="secondary_marker">#616161</color>
-    <color name="open">#2ecc70</color>
-    <color name="closed">#e67d22</color>
-    <color name="onSale">#2ecc70</color>
-    <color name="soldOut">#e67d22</color>
-    <color name="isGood_highlight">#065fd4</color>
-    <color name="isGood_normal">#717171</color>
-    <color name="text_bg">#D7D3D3</color>
-    <color name="progress_bg">#80000000</color>
-    <color name="action_bar_bg">#5C5959</color>
+    <!-- ts color -->
+    <color name="primary">#004D40</color>
+    <color name="primary_dark">#000000</color>
+    <color name="primary_light">#009688</color>
+    <color name="accent">#00C853</color>
+    <color name="accent_light">#00E676</color>
+
+<!--    <color name="primary_text">#212121</color>-->
+<!--    <color name="secondary_text">#757575</color>-->
+<!--    <color name="icons">#FFFFFF</color>-->
+<!--    <color name="divider">#BDBDBD</color>-->
+<!--    <color name="indicator">#FF4081</color>-->
+<!--    <color name="indicator_bg">#989292</color>-->
+<!--    <color name="badge_bg">#B3FF4081</color>-->
+<!--    <color name="primary_marker">#536dfe</color>-->
+<!--    <color name="secondary_marker">#616161</color>-->
+<!--    <color name="open">#2ecc70</color>-->
+<!--    <color name="closed">#e67d22</color>-->
+<!--    <color name="onSale">#2ecc70</color>-->
+<!--    <color name="soldOut">#e67d22</color>-->
+<!--    <color name="isGood_highlight">#065fd4</color>-->
+<!--    <color name="isGood_normal">#717171</color>-->
+<!--    <color name="text_bg">#D7D3D3</color>-->
+<!--    <color name="progress_bg">#80000000</color>-->
+<!--    <color name="action_bar_bg">#5C5959</color>-->
 </resources>
