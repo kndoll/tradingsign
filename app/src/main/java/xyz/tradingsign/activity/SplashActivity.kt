@@ -114,6 +114,7 @@ class SplashActivity : AppCompatActivity(), IExpertInitListener, IExpertLoginLis
 
     override fun onLoginFinished() {
 //        Toast.makeText(baseContext, "계좌리스트 조회 TR 성공 => " + CommExpertMng.getInstance().GetAccountNo(0), Toast.LENGTH_SHORT).show()
-        startActivity(Intent(this@SplashActivity, StockListActivity::class.java))
+        startActivity(Intent(this@SplashActivity, StockDetailActivity::class.java))
+//        startActivity(Intent(this@SplashActivity, StockListActivity::class.java))
     }
 }

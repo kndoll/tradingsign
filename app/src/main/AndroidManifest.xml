@@ -22,7 +22,8 @@
         android:supportsRtl="true"
         android:theme="@style/TSTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.StockListActivity"></activity>
+        <activity android:name=".activity.StockDetailActivity"></activity>
+        <activity android:name=".activity.StockListActivity" />
 
         <uses-library
             android:name="org.apache.http.legacy"

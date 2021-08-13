@@ -19,31 +19,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:completionThreshold="1"
-            android:hint="종목명 입력"
-            android:textColor="@color/white"
-            android:textColorHint="@color/grey"/>
-        <FrameLayout
-            android:id="@+id/frameLayout_stock_list_nest"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-                android:id="@+id/swipeRefreshLayout_stock_list"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerView_stock_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-            <TextView
-                android:id="@+id/textView_empty"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text=""
-                android:textSize="16dp"
-                android:gravity="center"
-                android:visibility="invisible" />
-        </FrameLayout>
+            android:hint="종목명 입력"/>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/frameLayout_stock_list_nest"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--                android:id="@+id/swipeRefreshLayout_stock_list"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/recyclerView_stock_list"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+<!--            <TextView-->
+<!--                android:id="@+id/textView_empty"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text=""-->
+<!--                android:textSize="16dp"-->
+<!--                android:gravity="center"-->
+<!--                android:visibility="invisible" />-->
+<!--        </FrameLayout>-->
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

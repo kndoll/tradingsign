@@ -1,6 +1,5 @@
 package xyz.tradingsign.activity
 
-import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
@@ -15,12 +14,12 @@ class StockListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stock_list)
 
-
         var tickerList: ArrayList<String> = ArrayList()
 
         val kospiList = CommExpertMng.getInstance().GetKospiCodeList()
         val kosdaqList = CommExpertMng.getInstance().GetKosdaqCodeList()
         kospiList.forEach() {
+            println(it.name + " : " + it.code)
             tickerList.add(it.name)
         }
         kosdaqList.forEach() {
